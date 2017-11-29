@@ -3,19 +3,22 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Zhai Yihu.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
-#   directory as a "Sources Root".  Do that by right clicking on the src folder,
+#   directory as a "Sources Root".  Do that by right clicking on the src
+#   folder,
 #   then selector  Mark Directory As --> Sources Root
 #
-#   Expand the import lines below and watch the red underlines disappear as you do that step.
-#   You will do that once for every project that uses rosegraphics so get used to it. :)
+#   Expand the import lines below and watch the red underlines disappear as
+#   you do that step.
+#   You will do that once for every project that uses rosegraphics so get
+#   used to it. :)
 #
 #   Then run this module and look for more TO DO's later in the file.
 ########################################################################
@@ -34,9 +37,12 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
+
 
     window.close_on_mouse_click()
 
@@ -103,9 +109,24 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    turt4 = rg.SimpleTurtle()
+    turt4.pen = rg.Pen('red', 20)
+    turt4.backward(50)
+
+
+def turtle5():
+    turt5 = rg.SimpleTurtle()
+    turt6 = rg.SimpleTurtle()
+    turt5.pen = rg.Pen('pink', 50)
+    turt6.pen = rg.Pen('green', 30)
+    turt5.left(90)
+    turt5.forward(200)
+    turt6.right(90)
+    turt6.forward(300)
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +158,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -150,7 +171,8 @@ def turtle3():
 #    2. Set your SimpleTurtle's
 #               pen
 #       to a new rg.Pen with a color and thickness of your own choosing.
-#       See the COLORS.txt  file in this project for a list of legal color-names.
+#       See the COLORS.txt  file in this project for a list of legal
+#       color-names.
 #    3. Make your SimpleTurtle move around a bit.
 #
 # ----------------------------------------------------------------------
@@ -167,7 +189,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +205,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
